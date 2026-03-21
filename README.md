@@ -79,4 +79,3 @@ WalletAnalysis → Dashboard
 Trouve-la dans **Extended → Settings → API Keys**.
 Le scope **read-only** suffit.
 Elle n'est jamais stockée — utilisée uniquement le temps de la session.
-"# extended-edge-tracker" 
