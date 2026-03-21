@@ -264,6 +264,14 @@ function Dashboard({ analysis }: { analysis: WalletAnalysis }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 14, animation: "fadeUp .4s ease" }}>
 
+      {/* Share on X button */}
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <button onClick={shareOnX} style={{ background: "transparent", border: "1px solid #0ea5e9", color: "#0ea5e9", fontFamily: "inherit", fontSize: 12, cursor: "pointer", borderRadius: 8, padding: "8px 16px", display: "flex", alignItems: "center", gap: 8, letterSpacing: "0.04em" }}>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#0ea5e9"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Share on X
+        </button>
+      </div>
+
       {/* Main card */}
       <div style={{ background: "#0f172a", border: `1px solid ${tc.border}33`, borderRadius: 14, padding: "24px", display: "flex", alignItems: "center", gap: 24, flexWrap: "wrap" as const }}>
         <ScoreRing score={sb.finalScore} tier={tier} />
@@ -499,10 +507,6 @@ export default function Home() {
               <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, color: "#10b981" }}>
                 <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#10b981" }} /> Connected
               </div>
-              <button onClick={shareOnX} style={{ background: "transparent", border: "1px solid #1e293b", color: "#0ea5e9", fontFamily: "inherit", fontSize: 11, cursor: "pointer", borderRadius: 6, padding: "5px 12px", display: "flex", alignItems: "center", gap: 6 }}>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="#0ea5e9"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                Share
-              </button>
               <button onClick={reset} style={{ background: "transparent", border: "1px solid #1e293b", color: "#475569", fontFamily: "inherit", fontSize: 11, cursor: "pointer", borderRadius: 6, padding: "5px 10px" }}>
                 Disconnect
               </button>
