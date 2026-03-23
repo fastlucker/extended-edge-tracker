@@ -210,9 +210,17 @@ function Hero({ onConnect }: { onConnect: (k: string) => void }) {
                 </div>
               ))}
             </div>
-            <div style={{ marginTop: 10, fontSize: 10, color: "#334155", lineHeight: 1.5 }}>
-              ⚠ Do not use your Stark private key or public key — use only the <strong style={{ color: "#475569" }}>API Key</strong> field.
+            <div style={{ marginTop: 10, lineHeight: 1.6 }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#ef4444" }}>
+              ⚠ Do not use your Stark private key or public key — use only the API Key field.
             </div>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#ef4444", marginTop: 6 }}>
+              ✓ The API Key is strictly read-only and cannot be used to place orders, transfer funds or withdraw assets. Verified in the{" "}
+              <a href="https://api.docs.extended.exchange/#authentication" target="_blank" rel="noopener noreferrer" style={{ color: "#ef4444", textDecoration: "underline" }}>official Extended documentation</a>
+              {" "}and confirmed by their{" "}
+              <a href="https://discord.com/channels/1193905940076953660/1441518584085090304" target="_blank" rel="noopener noreferrer" style={{ color: "#ef4444", textDecoration: "underline" }}>support on Discord</a>.
+            </div>
+          </div>
           </div>
         </div>
       </div>
